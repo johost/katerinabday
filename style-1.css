@@ -1,0 +1,146 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: "Open sans";
+	font-size: 14px;
+	color: black;
+}
+
+.biggest-div-of-all {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 10em;
+}
+
+.last-resort {
+	display: flex;
+	justify-content: center;
+}
+
+.main-area {
+	width: 90%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main {
+	flex: 1;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+.btn-link {
+	color: black;
+}
+
+.logo {
+	max-width: 10%;
+}
+
+/*nav*/
+
+.navbar {
+	background-color: black !important;
+	border-bottom: 6px solid #d6de48;
+	margin-bottom: 1em;
+}
+
+.navbar-brand {
+	font-size: 1em;
+}
+
+.sportello {
+	color: #d6de48;
+}
+
+.container-namen {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.ansprache {
+	margin-left: 1.25em;
+}
+
+/* accordions*/
+
+.accordion-item,
+.accordion-button {
+	border-radius: 0px !important;
+	background-color: rgb(244, 244, 244) !important;
+	color: black !important;
+	box-shadow: none !important;
+}
+
+.accordion-body {
+	background-color: white;
+}
+
+/*tables*/
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 0.5em;
+}
+
+th {
+	font-weight: 400;
+}
+
+th,
+td {
+	border: 1px solid #a0a0a0;
+	padding: 6px;
+	text-align: start;
+	vertical-align: top;
+}
+
+.green {
+	max-width: 12px;
+	margin-left: 0.5em;
+}
+
+/*footer*/
+.footer-oben {
+	background-color: rgb(175, 175, 175);
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.footer-unten {
+	display: flex;
+	color: white;
+	background-color: black;
+	justify-content: flex-end;
+	padding-top: 1em;
+}
+
+.footer-all {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-all a {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.footer-oben a {
+	padding-left: 1em;
+}
+
+.footer-unten-textkram {
+	padding-right: 1em;
+	display: flex;
+}

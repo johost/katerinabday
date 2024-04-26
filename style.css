@@ -1,0 +1,136 @@
+:root {
+    --dark-green: #3a4825;
+    --bright-green: #f6fcec;
+    --accordion-darkblue: #e2eefe;
+    --accordion-brightblue: #f2f8ff;
+    font-size: 16px;
+}
+
+/******* fonts ******** */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Ledger";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/ledger-v16-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--dark-green);
+    font-family: "Ledger";
+    background-color: var(--bright-green);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+.layout-all-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.content-section img {
+    border-radius: 0.25rem;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+#header-img {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.header h1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    text-align: end;
+    color: white;
+    font-weight: 500;
+}
+
+.accordion-item {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+ol li {
+}
+
+a {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.accordion-item h2 {
+    margin-top: 0;
+}
+
+.accordion-item {
+    border: none;
+    border-radius: 0.25rem;
+}
+
+/* Remove background color */
+.accordion-button {
+    background-color: var(--accordion-darkblue);
+}
+
+.accordion-button.collapsed {
+    border-radius: 0.25rem;
+}
+
+/* Remove background color on active state */
+.accordion-button:focus {
+    background-color: var(--accordion-darkblue);
+}
+
+/* Remove border if desired */
+.accordion-button {
+    border: none;
+}
+
+/* Override default active border on focus and hover */
+.accordion-button:focus,
+.accordion-button:hover,
+.accordion-button:active,
+.accordion-button:not(.collapsed) {
+    border-color: transparent !important;
+    background-color: var(--accordion-darkblue);
+    border: none;
+    border-bottom: none;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: transparent;
+    --bs-accordion-border-color: transparent;
+}
+
+.accordion-body {
+    background-color: var(--accordion-brightblue);
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-width: none;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
